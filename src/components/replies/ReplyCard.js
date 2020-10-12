@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Comment, Icon, Label } from 'semantic-ui-react'
 import useGetToken from '../utils/useGetToken'
 import Moment from 'react-moment'
-import { likeReply, dislikeReply, deleteReply } from 'actions'
+import { likeReply, dislikeReply, deleteReply } from '../../actions'
 
 const ReplyCard = props => {
   const {

@@ -10,7 +10,7 @@ import styled from 'styled-components'
 import { makeStyles } from '@material-ui/core/styles'
 import { Card, Avatar, Tooltip } from '@material-ui/core/'
 import { Button, Icon } from 'semantic-ui-react'
-import { acceptInvite, declineInvite } from 'actions/index'
+import { acceptInvite, declineInvite } from '../../actions/index'
 import { Mixpanel } from '../analytics/Mixpanel'
 
 const InviteNotificationsCard = props => {

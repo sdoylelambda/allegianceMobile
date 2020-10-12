@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { fetchFeed } from './actions/index'
 
 import undrawFans from '../../assets/undraw/undrawFans.svg'
-import PostCard from 'components/posts/PostCard'
+import PostCard from '../../components/posts/PostCard'
 
 const Feed = () => {
   const userGroups = useSelector(state => state.myGroups)

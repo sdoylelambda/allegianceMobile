@@ -1,4 +1,4 @@
-import * as types from 'actions/actionTypes'
+import * as types from '../actions/actionTypes'
 
 const initialState = {
   groupID: 0,
@@ -25,10 +25,10 @@ export const navReducer = (state = initialState, action) => {
         error: '',
       }
     case types.FETCH_GROUP_FAILURE:
-    return {
-      ...state,
-      error: action.payload
-    }
+      return {
+        ...state,
+        error: action.payload,
+      }
     default:
       return state
   }

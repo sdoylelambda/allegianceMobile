@@ -13,7 +13,7 @@ import {
   joinGroup,
   editUserMembership,
   leaveGroup,
-} from 'actions'
+} from '../../actions'
 
 const MembershipStatus = props => {
   const { user, group_id, members, privacy, memberType } = props

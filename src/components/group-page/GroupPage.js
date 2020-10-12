@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import * as types from 'actions/actionTypes'
+import * as types from '../../actions/actionTypes'
 import GroupInfo from './GroupInfo'
 import PostsContainer from '../posts/PostsContainer'
-import { fetchGroup, fetchGroupPosts, fetchUserMembership } from 'actions'
+import { fetchGroup, fetchGroupPosts, fetchUserMembership } from '../../actions'
 import styled from 'styled-components'
 import { Paper } from '@material-ui/core'
 import { Loader } from 'semantic-ui-react'
 import BlockedView from '../posts/BlockedView'
-import NotFound from 'components/NotFound'
+import NotFound from '../../components/NotFound'
 
 const GroupPage = props => {
   // Defines id to be group id from params

@@ -24,12 +24,12 @@ import {
   receiveReplyDislike,
   receiveGroupReply,
   receivePostReply,
-} from 'actions'
+} from '../../actions/index' //from 'actions'
 import {
   SET_UNREAD_NOTIFICATION_NUM,
   INCREMENT_UNREAD_NOTIFICATION_NUM,
-} from 'actions/actionTypes'
-import { fetchPrivateRequests, receivingGroup } from 'actions'
+} from '../../actions/actionTypes'
+import { fetchPrivateRequests, receivingGroup } from '../../actions/index'
 import {
   receiveFeedLike,
   receiveFeedDislike,
@@ -247,11 +247,11 @@ const NavBar = props => {
       ) : (
         <>
           <StickyNav pointing secondary>
-              <StyledMenuItem
-                style={{ width: isTablet ? '50%' : '25%', minWidth: '220px' }}
-              >
-                <NavSearch />
-              </StyledMenuItem>
+            <StyledMenuItem
+              style={{ width: isTablet ? '50%' : '25%', minWidth: '220px' }}
+            >
+              <NavSearch />
+            </StyledMenuItem>
             <Menu.Menu position='right'>
               <Navigation />
               <UserNav user={user} unread={unread} />

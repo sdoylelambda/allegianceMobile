@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'semantic-ui-css/semantic.min.css'
-import App from './App'
+import App from './App2'
 import * as serviceWorker from './serviceWorker'
 import { Auth0Provider } from './components/auth/react-auth0-wrapper'
 import { Provider } from 'react-redux'

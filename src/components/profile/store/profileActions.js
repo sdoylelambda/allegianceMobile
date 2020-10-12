@@ -1,4 +1,4 @@
-import axios from 'components/utils/axiosWithoutAuth'
+import axios from '../../../components/utils/axiosWithoutAuth'
 import * as types from './profileTypes'
 
 export const fetchProfile = id => async dispatch => {

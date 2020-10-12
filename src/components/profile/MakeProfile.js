@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import * as types from 'actions/actionTypes'
+import * as types from '../../actions/actionTypes'
 import useForm from '../utils/useForm'
 import { axiosWithAuth } from '../utils/axiosWithAuth'
 import useGetToken from '../utils/useGetToken'

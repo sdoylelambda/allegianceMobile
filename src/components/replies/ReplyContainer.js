@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button'
 import SendIcon from '@material-ui/icons/Send'
 import PostCard from '../posts/PostCard'
 import ReplyCard from './ReplyCard'
-import { fetchPost, createReply, fetchUserMembership } from 'actions'
+import { fetchPost, createReply, fetchUserMembership } from '../../actions'
 
 const ReplyContainer = props => {
   const post = useSelector(state => state.group.post)

@@ -1,4 +1,4 @@
-import * as types from 'components/profile/store/profileTypes'
+import * as types from '../components/profile/store/profileTypes'
 
 const initialState = {
   allegiances: [],

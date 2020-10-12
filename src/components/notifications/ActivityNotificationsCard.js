@@ -9,7 +9,7 @@ import styled from 'styled-components'
 
 import { makeStyles } from '@material-ui/core/styles'
 import { Card, Avatar, Tooltip } from '@material-ui/core/'
-import { deleteNotification } from 'actions/index'
+import { deleteNotification } from '../../actions/index'
 import { Icon } from 'semantic-ui-react'
 
 const ActivityNotificationsCard = props => {

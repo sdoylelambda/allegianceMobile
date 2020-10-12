@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import _ from 'lodash'
 import { Search } from 'semantic-ui-react'
-import axios from 'components/utils/axiosWithoutAuth'
+import axios from '../../components/utils/axiosWithoutAuth'
 import { withRouter } from 'react-router-dom'
 
 const NavSearch = props => {

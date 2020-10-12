@@ -2,8 +2,7 @@ import React from 'react'
 import { Tab } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { useSelector, useDispatch } from 'react-redux'
-// import { ADD_ALLEGIANCE, LEAVE_ALLEGIANCE } from '../../reducers/userReducer'
-import * as types from 'actions/actionTypes'
+import * as types from '../../actions/actionTypes'
 import { axiosWithAuth } from '../utils/axiosWithAuth'
 import useGetToken from '../utils/useGetToken'
 
@@ -52,10 +51,9 @@ const AllegianceTab = props => {
         user_id: loggedInUser.id,
         allegiance_id: id,
       }
-      const deletedAllegiance = await axiosWithAuth([token]).delete(
-        '/users_allegiances/',
-        { data: deleted }
-      )
+      const deletedAllegiance = await axiosWithAuth([
+        token,
+      ]).delete('/users_allegiances/', { data: deleted })
       console.log(deletedAllegiance)
       dispatch({ type: types.LEAVE_ALLEGIANCE_SUCCESS, payload: id })
     } catch {

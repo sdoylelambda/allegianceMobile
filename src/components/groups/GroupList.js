@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Loader } from 'semantic-ui-react'
-import axios from 'components/utils/axiosWithoutAuth'
+import axios from '../../components/utils/axiosWithoutAuth'
 import styled from 'styled-components'
 import GroupCard from './GroupCard'
 

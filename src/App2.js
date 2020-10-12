@@ -6,31 +6,33 @@ import { useDispatch, useSelector } from 'react-redux'
 import moment from 'moment'
 import styled from 'styled-components'
 import { Loader } from 'semantic-ui-react'
-import CssReset from 'styles/cssReset'
+import CssReset from './styles/cssReset'
 import PrivateRoute from './components/PrivateRoute'
 import { initGA, logPageView } from './components/analytics/Analytics'
 import { useAuth0 } from './components/auth/react-auth0-wrapper'
 import NavBar from './components/nav/NavBar'
-import * as types from 'actions/actionTypes'
+import * as types from './actions/actionTypes'
 import { Mixpanel } from './components/analytics/Mixpanel'
 import MixpanelMessages from './components/analytics/MixpanelMessages'
-import NotFound from 'components/NotFound'
+import NotFound from './components/NotFound' //'./components/NotFound'
 
-const Landing = lazy(() => import('components/Landing'))
-const Profile = lazy(() => import('components/profile/Profile'))
-const GroupContainer = lazy(() => import('components/groups/GroupContainer'))
-const MakeProfile = lazy(() => import('components/profile/MakeProfile'))
-const GroupPage = lazy(() => import('components/group-page/GroupPage'))
-const CreateGroup = lazy(() => import('components/groups/CreateGroup'))
-const UnderConstruction = lazy(() => import('components/UnderConstruction'))
-const AddAllegiance = lazy(() => import('components/allegiances/AddAllegiance'))
-const ReplyContainer = lazy(() => import('components/replies/ReplyContainer'))
-const MakeAllegiance = lazy(() =>
-  import('components/allegiances/MakeAllegiance')
+const Landing = lazy(() => import('./components/Landing'))
+const Profile = lazy(() => import('./components/profile/Profile'))
+const GroupContainer = lazy(() => import('./components/groups/GroupContainer'))
+const MakeProfile = lazy(() => import('./components/profile/MakeProfile'))
+const GroupPage = lazy(() => import('./components/group-page/GroupPage'))
+const CreateGroup = lazy(() => import('./components/groups/CreateGroup'))
+const UnderConstruction = lazy(() => import('./components/UnderConstruction'))
+const AddAllegiance = lazy(() =>
+  import('./components/allegiances/AddAllegiance')
 )
-const Feed = lazy(() => import('components/feed/Feed'))
+const ReplyContainer = lazy(() => import('./components/replies/ReplyContainer'))
+const MakeAllegiance = lazy(() =>
+  import('./components/allegiances/MakeAllegiance')
+)
+const Feed = lazy(() => import('./components/feed/Feed'))
 const Notifications = lazy(() =>
-  import('components/notifications/Notifications')
+  import('./components/notifications/Notifications')
 )
 
 const AppWrapper = styled.div`
@@ -41,7 +43,7 @@ const AppWrapper = styled.div`
   margin: 0 auto;
 `
 
-const App = props => {
+const App2 = props => {
   const dispatch = useDispatch()
   const loggedInUser = useSelector(state => state.userReducer.loggedInUser)
   const socket = useSelector(state => state.socketReducer.socket)
@@ -180,4 +182,4 @@ const App = props => {
   )
 }
 
-export default withRouter(App)
+export default withRouter(App2)

@@ -6,12 +6,12 @@ import styled from 'styled-components'
 import ProfileAllegiances from './ProfileAllegiances'
 import useGetToken from '../utils/useGetToken'
 import { fetchProfile, fetchProfilePosts } from './store/profileActions'
-import defaultBanner from 'assets/defaultBanner.jpg'
+import defaultBanner from '../../assets/defaultBanner.jpg'
 import { Typography } from '@material-ui/core'
 import Default from '../../assets/walter-avi.png'
 import MyGroups from './MyGroups'
 import { ProfilePosts } from './ProfilePosts'
-import NotFound from 'components/NotFound'
+import NotFound from '../../components/NotFound'
 
 const Profile = props => {
   const dispatch = useDispatch()

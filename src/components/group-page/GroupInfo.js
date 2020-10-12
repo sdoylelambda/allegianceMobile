@@ -8,8 +8,8 @@ import MembershipStatus from './MembershipStatus'
 import AllegiancePopover from './AllegiancePopover'
 import MemberList from './MemberList'
 import Default from '../../assets/walter-avi.png'
-import useGetToken from 'components/utils/useGetToken'
-import { addToGroup, removeRequest, removeMember } from 'actions'
+import useGetToken from '../../components/utils/useGetToken'
+import { addToGroup, removeRequest, removeMember } from '../../actions'
 
 const GroupInfo = props => {
   // define privacy variable for reusable formatting

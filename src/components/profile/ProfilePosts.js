@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from 'assets/undraw/noPosts.svg'
+import pic from '../../assets/undraw/noPosts.svg'
 import ProfilePostCard from './ProfilePostCard'
 import styled from 'styled-components'
 

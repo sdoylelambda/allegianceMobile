@@ -1,4 +1,4 @@
-import * as types from 'actions/actionTypes'
+import * as types from '../actions/actionTypes'
 
 export const groupsReducer = (state = [], action) => {
   switch (action.type) {

@@ -4,9 +4,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import avi from '../../assets/walter-avi.png'
 import Moment from 'react-moment'
 import { ThumbUp, ModeCommentOutlined, DeleteOutline } from '@material-ui/icons'
-import { likePost, dislikePost } from 'actions'
 import useGetToken from '../utils/useGetToken'
-import { deleteGroupPost } from 'actions'
+import { deleteGroupPost, likePost, dislikePost } from '../../actions'
 import { useSelector, useDispatch } from 'react-redux'
 import {
   Card,

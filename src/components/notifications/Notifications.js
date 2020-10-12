@@ -5,12 +5,12 @@ import { useSelector, useDispatch } from 'react-redux'
 import styled from 'styled-components'
 import { Loader } from 'semantic-ui-react'
 import moment from 'moment'
-import * as types from 'actions/actionTypes'
+import * as types from '../../actions/actionTypes'
 //import PICTURES (SVG)
 import undrawCompleteTask from '../../assets/undraw/undrawCompleteTask.svg'
 import ActivityNotificationsCard from './ActivityNotificationsCard'
 import InviteNotificationCard from './InviteNotificationCard'
-import { fetchNotifications } from 'actions/index'
+import { fetchNotifications } from '../../actions/index'
 
 const Notifications = () => {
   const notifications = useSelector(state => state.notifyReducer.notifications)
